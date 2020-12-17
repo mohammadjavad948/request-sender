@@ -17,7 +17,7 @@ async function sendReq(){
       readline.question('how many?', async count => {
 
         for(let i = 1; i <= count; i++){
-            await sleep(40000);
+            await sleep(3000);
     
             console.log('sending request ' + i);
             
