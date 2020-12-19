@@ -6,8 +6,8 @@ const readline = require('readline').createInterface({
 });
 
 const options = {
-  hostname: 'nanoclub.ir',
-  path: '/online-festival/show/15',
+  hostname: 'lms.larsampad.ir',
+  path: '/',
   method: 'GET'
 }
 
@@ -17,7 +17,6 @@ async function sendReq(){
       readline.question('how many?', async count => {
 
         for(let i = 1; i <= count; i++){
-            await sleep(5000);
     
             console.log('sending request ' + i);
             
