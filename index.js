@@ -6,8 +6,8 @@ const readline = require('readline').createInterface({
 });
 
 const options = {
-  hostname: 'androidnilo.rozblog.com',
-  path: '/',
+  hostname: 'lms.larsampad.ir',
+  path: '/login/index.php',
   method: 'GET'
 }
 
