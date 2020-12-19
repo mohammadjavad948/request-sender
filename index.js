@@ -6,8 +6,8 @@ const readline = require('readline').createInterface({
 });
 
 const options = {
-  hostname: 'lms.larsampad.ir',
-  path: '/login/index.php',
+  hostname: 'host',
+  path: '/',
   method: 'GET'
 }
 
