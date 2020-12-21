@@ -6,8 +6,8 @@ const readline = require('readline').createInterface({
 });
 
 const options = {
-  hostname: 'host',
-  path: '/',
+  hostname: 'lms.larsampad.ir',
+  path: '/login/index.php',
   method: 'GET'
 }
 
@@ -15,6 +15,8 @@ const options = {
 async function sendReq(){
        
       readline.question('how many?', async count => {
+
+        console.time('r');
 
         for(let i = 1; i <= count; i++){
     
@@ -34,6 +36,7 @@ async function sendReq(){
               req.end();
         }
 
+        console.timeEnd('r')
         readline.close();
 
       });
