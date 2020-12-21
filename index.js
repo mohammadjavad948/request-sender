@@ -16,7 +16,21 @@ async function sendReq(){
        
       readline.question('how many?', async count => {
 
-        console.time('r');
+        
+        while(true){
+          send(count);
+          await sleep(10000);
+        }
+
+      });
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function send(count){
+  console.time('r');
 
         for(let i = 1; i <= count; i++){
     
@@ -37,13 +51,5 @@ async function sendReq(){
         }
 
         console.timeEnd('r')
-        readline.close();
-
-      });
 }
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 sendReq();
